@@ -178,7 +178,7 @@ src_install() {
 	if ! ${PRECOMPILED} ; then
 		cd ${PN} || die
 		doman sbin/*.8
-		dodoc debian/README.* examples/ca-certificates-local/README
+		dodoc debian/README.*
 	fi
 
 	echo 'CONFIG_PROTECT_MASK="/etc/ca-certificates.conf"' > 98ca-certificates || die
